@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+<video controls height="220" width="390">
+	<source src="https://cdn.discordapp.com/attachments/1086895096412254258/1296081399429730344/Minecraft_Trails__Tales_Update__Official_Launch_Trailer_1.mp4?ex=6710fd5d&is=670fabdd&hm=0f43b4fd73ed9695edba5fddb61d791238e34b1bf9fd7af953f29f637e956157&" type="video/mp4">
+</video>
+<input type="image" src="https://cdn.discordapp.com/attachments/1086895096412254258/1296077062716788797/channels4_profile.jpg?ex=6710f953&is=670fa7d3&hm=1c68f17fdd59947f0015fa80ce53c1f46c1c8028cc8522c99b08c1ff3f108981&" name="myButton" width="115">
+
+<button class="button"><span>Hover </span></button>
+
+
+
+
+
+
+
+
+</body>
+</html>
